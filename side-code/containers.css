@@ -1,0 +1,11 @@
+
+.navbar-text{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-items: right;
+    border: solid red 1px;
+    height: 1000px;
+    
+    
+}

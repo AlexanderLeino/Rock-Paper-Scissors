@@ -1,0 +1,28 @@
+:root {
+    --outer-space: #33393f;
+    --bright-turquoise: #2aefcb;
+    --gin: #e0eae4;
+    --heliotrope: #e866ec;
+  }
+  body {
+      background-color: var(--outer-space);
+
+  }
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#box1{
+    background-color: blue;
+    width: 33%;
+}
+#box2 {
+    background-color: red;
+    width: 33%;
+}
+#box3{
+    background-color: black;
+    width: 33%;
+}
