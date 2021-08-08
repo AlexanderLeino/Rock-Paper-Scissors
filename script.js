@@ -28,6 +28,8 @@ function getResult () {
     if(userChoice === cpuChoice){
         console.log('Its a Tie!')
         ties++
+        display()
+        console.log(ties)
     }
     else if (userChoice === 'scissors' && cpuChoice === 'paper' ||
              userChoice === 'rock' && cpuChoice === 'scissors' ||
@@ -35,16 +37,22 @@ function getResult () {
              {
                 console.log('You Won!') 
                 wins++
+                display()
                 console.log(wins)
              }
     else {
         
         console.log('You Lost')
         losses++
+        console.log(losses) 
+        display()
         
     }}
-
-    console.log(userChoice)
+    function display (){
+        document.getElementById('wins').innerHTML=wins
+        document.getElementById('losses').innerHTML=losses
+        document.getElementById('ties').innerHTML=ties
+    }
 
     
     
